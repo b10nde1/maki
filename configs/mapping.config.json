@@ -1,0 +1,8 @@
+{
+    "feature":{
+        "path":{
+            "openWebsite": "/basic/",
+            "searchForPresident": "/"
+        }
+    }
+}

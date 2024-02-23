@@ -1,0 +1,6 @@
+{
+    "scope": {
+        "fr": ["openWebsite"],
+        "uk": ["openWebsite", "searchForPresident"]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "visualElements":{
+        "imgs":{
+            "logo": "img[alt='Google']"
+        }
+    },
+    "actionElements":{
+        "fields": {
+            "searchBar": "textarea[title='Search']"
+        },
+        "button":{
+            "autocompletePrediction": "(//ul[@role='listbox']//li)%10"
+        }
+    }
+}
