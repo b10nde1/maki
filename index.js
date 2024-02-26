@@ -10,13 +10,13 @@ _build.scope[market].forEach(scopeElement => {
     const tempScriptPath = `${_mapping.feature.path[scopeElement]}${scopeElement}.feature`;
     const tempFeature = fs.readFileSync(`./features${tempScriptPath}`, "utf-8");
     const splitFeatureData = tempFeature.split("\n");
-    let tempOutput = "";
+    let tempOutput = "const { When, Then } = require('@cucumber/cucumber');\n\n";
     const outputPath = `./${targetFolder}/supports`;
 
     for (let compt = 3; compt < splitFeatureData.length; compt++) {
         const tempSteps = splitFeatureData[compt].trim().split(" ");
         tempOutput += `\n${tempSteps[0]}('`
-            + `${tempSteps.slice(1).join(" ")}, () => {`
+            + `${tempSteps.slice(1).join(" ")}', () => {`
             + `});`;
     }
 
