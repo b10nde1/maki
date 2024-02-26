@@ -1,0 +1,5 @@
+{
+    "browser": "chrome",
+    "targetFolder": "features",
+    "gherkinKeys": ["Given", "When", "Then", "And"]
+}
