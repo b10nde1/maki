@@ -29,7 +29,7 @@ _build.scope[market].forEach(scopeElement => {
 
         tempOutput += `\n${tempSteps[0]}("`
             + `${stepObj.step}", async (${stepObj.params}) => {`
-            + ` ${stepObj.action ? "await" + stepObj.action : ""} `
+            + ` ${stepObj.action ? "await " + stepObj.action : ""} `
             + `});`;
     }
 
