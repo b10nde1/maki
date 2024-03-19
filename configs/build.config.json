@@ -1,4 +1,5 @@
 {
+    "target": "fr",
     "scope": {
         "fr": ["openWebsite"],
         "uk": ["openWebsite", "searchForPresident"]
