@@ -4,7 +4,7 @@ import _build from "./configs/build.config.json" assert{type: "json"};
 import _mapping from "./configs/mapping.config.json" assert{type: "json"};
 import _capabilities from "./configs/capabilities.config.json" assert{type: "json"};
 
-const market = process.env.site_target;
+const market = process.env.site_target || _build.target;
 const outputPath = `./${_capabilities.targetFolder}/output`;
 let gherkinKeyword = _capabilities.gherkinKeys;
 
