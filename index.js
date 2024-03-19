@@ -40,6 +40,8 @@ _build.scope[market].forEach(scopeElement => {
             + `${(gherkinKeyword.filter(ghkElement => tempGherkinKey.includes(ghkElement))).join(", ")} }`
         + ` from '@cucumber/cucumber';\n\n`);
 
+    tempOutput = tempOutput.replaceAll("#", "//");
+
     // generate the steps file
     !fs.existsSync(outputPath) && fs.mkdirSync(outputPath);
 
